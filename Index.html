@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RayChat v1.0</title><link rel="stylesheet" href="style.css">
+
+</head>
+<body><div class="background-glow"></div>
+
+<div class="app">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>⚡ RayChat</h1>
+        <p>Realtime Chat • GitHub Edition</p>
+    </header>
+
+    <!-- Setup Screen -->
+    <section class="setup-card" id="setupCard">
+
+        <h2>Join Room</h2>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username (Rayzen, Aero...)"
+            maxlength="20"
+        >
+
+        <input
+            type="text"
+            id="roomCode"
+            placeholder="Room Code (RAY-71)"
+            maxlength="20"
+        >
+
+        <button id="joinBtn">
+            Enter RayChat
+        </button>
+
+    </section>
+
+    <!-- Chat Screen -->
+    <section class="chat-card hidden" id="chatCard">
+
+        <div class="room-info">
+            <span id="roomDisplay">Room: ---</span>
+        </div>
+
+        <div class="messages" id="messages">
+
+            <!-- Messages appear here -->
+
+            <div class="message other">
+                <strong>Aero</strong>
+                <p>Welcome to RayChat 😎</p>
+            </div>
+
+        </div>
+
+        <div class="message-box">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+            >
+
+            <button id="sendBtn">
+                ➤
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
